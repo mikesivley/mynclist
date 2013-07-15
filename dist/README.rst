@@ -48,32 +48,3 @@ For manual Windows installation:
 2. Unzip MyNCList-1.0.zip  
 3. `cd MyNCList-1.0`  
 4. `python setup.py install`
-
-Configuration Files
--------------------
-Configuration options for MyNCList should be specified in a config file, with
-a space separating the configuration parameter and its value. A sample config
-file is included with the distributable. MySQL tables will be created following
-the convention `DBNAME`.`LABEL_TABLENAME` (e.g. `nclist`.`sample_masterkey`)
-and will overwrite existing tables if necessary, so unique labels are strongly
-encouraged.
-
-Database Parameters:
-
-	DBHOST		MySQL hostname
-	DBUSER		MySQL user
-	DBPASS		MySQL password
-	DBNAME		MySQL database
-
-Required Parameters:
-
-	BEDFILE		Location of source .BED file
-	OFFSET 		Location chromosome base position offsets file
-	WORKDIR		Working directory for intermediate files
-	LABEL		Label for this set of annotations
-
-Optional Parameters:
-
-	MEMBERSHIP	Nest interval within the [first,last] valid parent
-	REPORTS		Output additional intermediate files? [yes,no]
-	CONCAT_DUPS	Concatenate annotations for duplicate intervals? [yes,no]
