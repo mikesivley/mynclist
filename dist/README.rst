@@ -18,21 +18,18 @@ It is recommended that users install from the contents of dist/.
 
 Automated Linux install:
 
-```
-	cd dist/  
+	cd dist/
 	sudo MyNCList-install.sh
-```
+
 or
 
-```
 	cd dist/
 	sudo MyNCList-install.sh --mysql
-```
 
-If access to MySQL is not available, option 2b will install mysql onto your
-local linux machine, and create a database called `nclist` to be used by
-MyNCList. Users should update their configuration files to reflect this 
-information.
+If access to MySQL is not available, the second option will install mysql 
+onto your local linux machine, and create a database called `nclist` to be 
+used by MyNCList. Users should update their configuration files to reflect
+this information.
 
 Users with access to MySQL should create this database manually and specify
 the information in the configuration file. MyNCList.py will not attempt to 
@@ -41,14 +38,14 @@ configuration files.
 
 For manual Linux installation: 
 
-1. `cd dist/`  
-2. `tar -zxvf MyNCList-1.0.tar.gz`  
-3. `cd MyNCList-1.0`  
-4. `sudo python setup.py install`  
+	cd dist/
+	tar -zxvf MyNCList-1.0.tar.gz
+	cd MyNCList-1.0
+	sudo python setup.py install
 
 For manual Windows installation: 
 
-1. `cd dist/`  
-2. Unzip MyNCList-1.0.zip  
-3. `cd MyNCList-1.0`  
-4. `python setup.py install`
+	cd dist/
+	-Unzip MyNCList-1.0.zip-
+	cd MyNCList-1.0
+	python setup.py install
