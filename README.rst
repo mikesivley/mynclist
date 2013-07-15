@@ -13,7 +13,8 @@ Dependencies
 ------------
 MyNCList requires Python2.7, `MySQL-python`, and a MySQL database in 
 which to store the NCList structure. Installation should automatically
-install `MySQL-python` and can install MySQL locally if specified.  
+install `MySQL-python` and can install MySQL locally if specified.
+
 If `setuptools` is not installed, you may download it from pypi:
 https://pypi.python.org/pypi/setuptools
 
@@ -23,13 +24,16 @@ It is recommended that users install from the contents of dist/.
 
 Automated Linux install:
 
+```
 	cd dist/  
 	sudo MyNCList-install.sh
-
+```
 or
 
+```
 	cd dist/
 	sudo MyNCList-install.sh --mysql
+```
 
 If access to MySQL is not available, option 2b will install mysql onto your
 local linux machine, and create a database called `nclist` to be used by
@@ -66,20 +70,26 @@ encouraged.
 
 Database Parameters:
 
+```
 	DBHOST		MySQL hostname
 	DBUSER		MySQL user
 	DBPASS		MySQL password
 	DBNAME		MySQL database
+```
 
 Required Parameters:
 
+```
 	BEDFILE		Location of source .BED file
 	OFFSET 		Location chromosome base position offsets file
 	WORKDIR		Working directory for intermediate files
 	LABEL		Label for this set of annotations
+```
 
 Optional Parameters:
 
+```
 	MEMBERSHIP	Nest interval within the [first,last] valid parent
 	REPORTS		Output additional intermediate files? [yes,no]
 	CONCAT_DUPS	Concatenate annotations for duplicate intervals? [yes,no]
+```

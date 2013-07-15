@@ -7,7 +7,8 @@ Dependencies
 ------------
 MyNCList requires Python2.7, `MySQL-python`, and a MySQL database in 
 which to store the NCList structure. Installation should automatically
-install `MySQL-python` and can install MySQL locally if specified.  
+install `MySQL-python` and can install MySQL locally if specified.
+
 If `setuptools` is not installed, you may download it from pypi:
 https://pypi.python.org/pypi/setuptools
 
@@ -17,13 +18,16 @@ It is recommended that users install from the contents of dist/.
 
 Automated Linux install:
 
+```
 	cd dist/  
 	sudo MyNCList-install.sh
-
+```
 or
 
+```
 	cd dist/
 	sudo MyNCList-install.sh --mysql
+```
 
 If access to MySQL is not available, option 2b will install mysql onto your
 local linux machine, and create a database called `nclist` to be used by
